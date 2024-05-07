@@ -9,7 +9,7 @@ const Navigation = () => {
         <div className={'flex justify-between px-2 gap-6'}>
             {
                 navigationArray.map(item => (
-                    <p className={'text-xl font-medium  cursor-pointer  hover:text-[#0000008c] ease-in duration-300'} key={item.id}>
+                    <p className={'font-medium  cursor-pointer  hover:text-[#0000008c] ease-in duration-300 sm:text-sm lg:text-xl xl:text-xl 2xl:text-xl'} key={item.id}>
                         {item.title}
                     </p>
                 ))

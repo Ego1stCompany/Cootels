@@ -11,12 +11,12 @@ const Footer = () => {
     const footerList = useSelector(state => state.footerList);
 
     return (
-        <footer className={'bg-[#0B265A] py-20 mt-40'}>
-            <div className={'m-auto container flex px-4 justify-between basis-6/12 grow shrink'}>
+        <footer className={'bg-[#0B265A] py-20 sm:mt-20 lg:mt-40 xl:mt-40 2xl:mt-40'}>
+            <div className={'m-auto container flex px-4 justify-between grow shrink sm:basis-2/12 lg:basis-6/12 xl:basis-6/12 2xl:basis-6/12'}>
                 <div className={'flex justify-start gap-6 flex-col'}>
                     <Logo color={'white'}/>
 
-                    <p className={'text-gray-400 w-5/12'}>
+                    <p className={'text-gray-400 w-8/12 sm:text-sm lg:text-lg xl:text-lg 2xl:text-lg'}>
                         Your Best Private Hideway From Crowd. Back to Nature.
                     </p>
 
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className={'flex basis-6/12 justify-around gap-10'}>
+                <div className={'flex justify-around gap-10 sm:basis-10/12 lg:basis-6/12 xl:basis-6/12 2xl:basis-6/12'}>
                     {
                         footerList.map((list, index) => {
                             return (
@@ -35,9 +35,9 @@ const Footer = () => {
                                     {
                                         list.map((item,index) => {
                                             if (item.title) {
-                                                return <li key={index} className={'text-lg text-white font-bold'}>{item.title}</li>
+                                                return <li key={index} className={'text-white font-bold sm:text-lg lg:text-lg xl:text-lg 2xl:text-lg'}>{item.title}</li>
                                             }
-                                            return <li key={index} className={'text-lg text-white cursor-pointer transition hover:text-gray-400 ease-in'}>{item.text}</li>
+                                            return <li key={index} className={'text-white cursor-pointer transition hover:text-gray-400 ease-in sm:text-sm lg:text-lg xl:text-lg 2xl:text-lg'}>{item.text}</li>
                                         })
                                     }
                                 </ul>
