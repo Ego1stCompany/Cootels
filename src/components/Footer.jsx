@@ -11,8 +11,8 @@ const Footer = () => {
     const footerList = useSelector(state => state.footerList);
 
     return (
-        <footer className={'bg-[#0B265A] py-20 sm:mt-20 lg:mt-40 xl:mt-40 2xl:mt-40'}>
-            <div className={'m-auto container flex px-4 justify-between grow shrink sm:basis-2/12 lg:basis-6/12 xl:basis-6/12 2xl:basis-6/12'}>
+        <footer className={'bg-[#0B265A] py-20 grid grid-cols-1 sm:mt-20 lg:mt-40 xl:mt-40 2xl:mt-40'}>
+            <div className={'m-auto container grid grid-cols-2 px-4'}>
                 <div className={'flex justify-start gap-6 flex-col'}>
                     <Logo color={'white'}/>
 
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className={'flex justify-around gap-10 sm:basis-10/12 lg:basis-6/12 xl:basis-6/12 2xl:basis-6/12'}>
+                <div className={'grid gap-10 grid-cols-3'}>
                     {
                         footerList.map((list, index) => {
                             return (
