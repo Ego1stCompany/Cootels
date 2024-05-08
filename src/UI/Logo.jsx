@@ -2,7 +2,7 @@ import React from 'react';
 
 const Logo = (props) => {
     return (
-        <h1 className={`font-bold text-${props.color} sm:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl`}>
+        <h1 className={`${props.style} font-bold text-${props.color} sm:block text-2xl lg:block text-4xl xl:block text-4xl 2xl:block text-4xl`}>
             Cootels
         </h1>
     );

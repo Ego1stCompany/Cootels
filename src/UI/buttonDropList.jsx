@@ -12,7 +12,7 @@ const ButtonDropList = (props) => {
 
     return (
         <button
-            className={`flex justify-center items-center transition duration-200 ease-in-out rounded-3xl ${props.active === false ? 'bg-[#FFECE2]' : 'bg-[#FF620A]'} sm:w-10 h-10 lg:w-12 h-12 xl:w-12 h-12 2xl:w-12 h-12`}
+            className={`flex justify-center items-center transition duration-200 ease-in-out rounded-3xl ${props.active === false ? 'bg-[#FFECE2]' : 'bg-[#FF620A]'} w-12 h-12`}
             onClick={() => dispatch(removeActive({id: props.id, active: props.active}))}
         >
             {
