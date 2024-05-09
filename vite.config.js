@@ -4,7 +4,7 @@ import {ViteImageOptimizer} from "vite-plugin-image-optimizer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'/Cootels/',
+  base:"/Cootels",
   plugins: [react(),
     ViteImageOptimizer({
       test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
