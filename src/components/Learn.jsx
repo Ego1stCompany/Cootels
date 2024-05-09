@@ -13,7 +13,8 @@ const Learn = () => {
                 <img src={image_4} alt={image_4} className={'h-2/4 w-4/4'}/>
             </div>
 
-            <div className={'flex flex-col items-center gap-10 sm:gap-6 lg:gap-10 xl:gap-10 2xl:gap-10'}>
+            <div
+                className={'flex flex-col items-center gap-10 sm:items-start  gap-6 lg:items-start gap-10 xl:items-start gap-10 2xl:items-start gap-10'}>
                 <h1 className={'font-bold text-lg sm:text-xl lg:text-4xl xl:text-6xl 2xl:text-6xl'}>
                     Cozy and Down to Earth Cootage Hotel in Norway.
                 </h1>

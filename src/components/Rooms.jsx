@@ -22,7 +22,7 @@ const Rooms = () => {
                 <ButtonExploreMore/>
             </div>
 
-            <div className={'grid grid-cols-1 gap-10 sm:text-sm ld:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3'}>
+            <div className={'grid grid-cols-1 gap-10 sm:text-sm sm:grid-cols-3 ld:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3'}>
                 {cartArray.map(item => <Art key={item.id} title={item.title} text={item.text} image={item.image}/>)}
             </div>
         </section>
