@@ -9,6 +9,7 @@ import Customers from "../components/Customers.jsx";
 import Footer from "../components/Footer.jsx";
 
 const Home = () => {
+
     return (
         <>
             <Header/>

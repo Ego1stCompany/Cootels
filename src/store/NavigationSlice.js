@@ -1,17 +1,18 @@
+import React from "react";
 import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = [
     {
         id: 1,
-        title: 'Rooms'
+        title: 'Rooms',
     },
     {
         id: 2,
-        title: 'Reservation'
+        title: 'Reservation',
     },
     {
         id: 3,
-        title: 'Contacs'
+        title: 'Contacs',
     }
 ]
 

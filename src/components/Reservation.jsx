@@ -1,4 +1,5 @@
 import React from 'react';
+import {forwardRef} from "react";
 //images
 import image_1 from '../assets/image-1.png'
 import image_2 from '../assets/image-2.png'
@@ -6,11 +7,12 @@ import image_3 from '../assets/image-3.png'
 //components
 import ButtonReservation from "../UI/buttonReservation.jsx";
 
-const Reservation = () => {
+const Reservation = (props,ref) => {
     return (
         <section
             id='Reservation'
             className={'m-auto container grid grid-cols-1 items-center px-4 gap-10 mt-20 sm:grid-cols-2  lg:grid-cols-2 xl:grid-cols-2  2xl:grid-cols-2'}
+            ref={ref}
         >
             <div
                 className={'flex flex-col items-center gap-10 sm:items-start  gap-8 lg:items-start  gap-10 xl:items-start  gap-10 2xl:items-start gap-10'}>
@@ -34,4 +36,4 @@ const Reservation = () => {
     );
 };
 
-export default Reservation;
+export default forwardRef(Reservation);
