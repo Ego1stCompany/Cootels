@@ -14,8 +14,7 @@ const Contacts = () => {
             id='Contacs'
             className={'m-auto container grid grid-cols-1 gap-16 items-center px-4 mt-20 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2'}>
             <div className={'flex grow shrink basis-6/12 flex-col gap-8 justify-start'}>
-                <span
-                    className={'text-[#424F7B] sm:text-sm lg:text-lg xl:text-lg 2xl:text-lg'}>Start your journey!</span>
+                <span className={'text-[#424F7B] sm:text-sm lg:text-lg xl:text-lg 2xl:text-lg'}>Start your journey!</span>
                 <h1 className={'font-bold text-lg sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl'}>How to Get My Room?</h1>
                 <p className={'text-[#848FAC] text-sm sm: text-sm lg:text-lg xl:text-lg 2xl:text-lg'}>You
                     can contact us by phone or email us. Easily tap the

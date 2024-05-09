@@ -4,6 +4,7 @@ import roomsReducer from './RoomSlice.js'
 import navigationReducer from './NavigationSlice.js'
 import dropListSlice from "./DropListSlice.js";
 import footerListNavigation from "./FooterListSlice.js";
+import sliderListSlice from "./SliderActive.js";
 import activeSlice from "./ActiveSlice.js";
 
 export const store = configureStore({
@@ -12,6 +13,7 @@ export const store = configureStore({
         navigation: navigationReducer,
         dropList: dropListSlice,
         footerList: footerListNavigation,
+        sliderList:sliderListSlice,
         active: activeSlice
     }
 })
