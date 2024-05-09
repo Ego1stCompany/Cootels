@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {removeActiveSlider} from "../store/SliderActive.js";
+import {removeActiveSlider} from "../store/SliderListSlice.js";
 
 const PointSlider = () => {
 
