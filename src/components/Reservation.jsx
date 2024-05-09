@@ -9,7 +9,8 @@ import ButtonReservation from "../UI/buttonReservation.jsx";
 const Reservation = () => {
     return (
         <section
-            className={'m-auto container grid grid-cols-1 items-center px-4 gap-10 mt-20 sm:grid-cols-2  lg:grid-cols-2 xl:grid-cols-2  2xl:grid-cols-2 '}
+            id='Reservation'
+            className={'m-auto container grid grid-cols-1 items-center px-4 gap-10 mt-20 sm:grid-cols-2  lg:grid-cols-2 xl:grid-cols-2  2xl:grid-cols-2'}
         >
             <div
                 className={'flex flex-col items-center gap-10 sm:items-start  gap-8 lg:items-start  gap-10 xl:items-start  gap-10 2xl:items-start gap-10'}>

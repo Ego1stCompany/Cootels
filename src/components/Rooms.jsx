@@ -9,7 +9,7 @@ const Rooms = () => {
     const cartArray = useSelector(state => state.carts)
 
     return (
-        <section className={'m-auto container grid grid-cols-1 gap-16 items-center mt-20 px-4'}>
+        <section className={'m-auto container grid grid-cols-1 gap-16 items-center mt-20 px-4'} id='Rooms'>
             <div className='flex flex-col gap-6 justify-center items-center'>
                 <h1 className={'font-bold text-lg sm:text-xl lg:text-4xl xl:text-6xl 2xl:text-6xl'}>
                     Many Rooms to Choose
