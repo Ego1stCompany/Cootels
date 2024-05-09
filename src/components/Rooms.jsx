@@ -1,18 +1,15 @@
 import React from 'react';
-import {forwardRef} from "react";
 import {useSelector} from "react-redux";
 //components
 import ButtonExploreMore from "../UI/buttonExploreMore.jsx";
 import Cart from "./Сart.jsx";
 
-const Rooms = (props,ref) => {
+const Rooms = () => {
 
     const cartArray = useSelector(state => state.carts)
 
-    console.log(ref)
-
     return (
-        <section className={'m-auto container grid grid-cols-1 gap-16 items-center mt-20 px-4'} ref={ref}>
+        <section className={'m-auto container grid grid-cols-1 gap-16 items-center mt-20 px-4'} id='Rooms'>
             <div className='flex flex-col gap-6 justify-center items-center'>
                 <h1 className={'font-bold text-lg sm:text-xl lg:text-4xl xl:text-6xl 2xl:text-6xl'}>
                     Many Rooms to Choose
@@ -32,4 +29,4 @@ const Rooms = (props,ref) => {
     );
 };
 
-export default forwardRef(Rooms);
+export default Rooms;

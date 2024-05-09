@@ -2,7 +2,6 @@ import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {removeActive} from "../store/ActiveSlice.js";
 
-
 const NavigationItem = (props) => {
 
     const active = useDispatch()
@@ -14,7 +13,7 @@ const NavigationItem = (props) => {
                onClick={() => {
                    active(removeActive({value: false}))
                }}>
-                {props.title}
+                <a href={`#${props.title}`}>{props.title}</a>
             </p>
         </div>
     );
