@@ -10,7 +10,7 @@ const NavigationItem = (props) => {
     return (
         <div>
             <p className={'font-medium cursor-pointer hover:text-[#0000008c] ease-in duration-300 sm:text-sm lg:text-xl xl:text-xl 2xl:text-xl'}
-               onClick={() => active(removeActive({value: !value.value}))}>
+               onClick={() => active(removeActive({value: false}))}>
                 <a href={`#${props.title}`}>{props.title}</a>
             </p>
         </div>
